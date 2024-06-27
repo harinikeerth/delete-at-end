@@ -1,0 +1,30 @@
+import java.util.LinkedList;
+
+public class DeleteAtEnd {
+    public static void main(String[] args) {
+        // Create a LinkedList
+        LinkedList<Integer> list = new LinkedList<>();
+
+        // Add some elements to the list
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+
+        // Display the original list
+        System.out.println("Original list: " + list);
+
+        // Check if the list is not empty before removing the last element
+        if (!list.isEmpty()) {
+            // Remove the last value
+            int removedValue = list.removeLast();
+            // Display the removed value
+            System.out.println("Removed value: " + removedValue);
+        } else {
+            System.out.println("The list is empty, nothing to remove.");
+        }
+
+        // Display the list after removal
+        System.out.println("List after removing the last value: " + list);
+    }
+}
